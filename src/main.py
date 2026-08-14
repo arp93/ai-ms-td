@@ -19,6 +19,7 @@ app.add_middleware(
 # Load your YOLO waste model
 model = YOLO("yolov8n.pt")   # <-- your working model
 
+# redeploy trigger
 
 @app.post("/scan-image")
 async def scan_image(file: UploadFile = File(...)):
