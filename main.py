@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # Load your YOLO waste model
-model = YOLO("models/best_model.pt")   # <-- your working model
+model = YOLO("yolov8n.pt")   # <-- your working model
 
 
 @app.post("/scan-image")
